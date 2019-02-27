@@ -1,1 +1,52 @@
-<h1>Hello world!</h1>
+<html>
+<head>
+	<title>
+		Mark & Helen 
+	</title>
+	<!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+	<style>
+		/* #### Mobile Phones Portrait #### */
+		@media screen and (max-device-width: 480px) and (orientation: portrait){
+			body {
+		    background-image: url("mobile.png");
+		    background-size: 100% 100%;
+		    background-repeat: no-repeat;
+		  }
+		  #clock {
+		  	font-size:50px;
+		  }		
+		}
+		/* #### Mobile Phones Landscape #### */
+		@media screen and (max-device-width: 640px) and (orientation: landscape){
+			body {
+		    background-image: url("1.png");
+		    background-size: 100% 100%;
+		    background-repeat: no-repeat;
+		  }	
+		  #clock {
+		  	font-size:10px;
+		  }	
+		}
+		/* #### Desktops #### */
+		@media screen and (min-width: 1024px){
+			body {
+		    background-image: url("1.png");
+		    background-size: 100% 100%;
+		    background-repeat: no-repeat;
+		  }		
+		  #clock {
+		  	font-size:20px;
+		  }	
+		}
+		
+		
+	</style>
+	<script type = "text/javascript" src = "script.js"> </script>
+
+</head>
+<body>
+	<div id="clock" style = "font-family:monaco; color: white; text-shadow: -1.5px 0 black, 0 1.5px black,
+      1.5px 0 black, 0 -1.5px black; text-align:left; margin-top: 50px; margin-left: 50px" ></div>
+
+</body>
+</html>
